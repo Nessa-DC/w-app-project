@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work 6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/29d44c7303.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8">
+              <form id="search-form">
+                <input
+                  type="search"
+                  placeholder="Enter city"
+                  name="search"
+                  id="search-field"
+                  class="search-field"
+                />
+                <input
+                  type="submit"
+                  value="Search"
+                  id="search-button"
+                  class="search-button"
+                />
+              </form>
+            </div>
+            <div class="col-4">
+              <button id="current-button" class="current-button">
+                Current location
+              </button>
+            </div>
+          </div>
+          <h1>
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="city">Charleroi</span>
+          </h1>
+          <h2>Sunday 16:36</h2>
+          <p>
+            <span id="description" class="description"> Few Clouds </span>
+          </p>
+          <div class="row">
+            <div class="col-8">
+              <h3>
+                <span id="current-temp" class="current-temp">5</span
+                ><span class="current-units">°C</span>
+              </h3>
+            </div>
+            <div class="col-4">
+              <ul class="more-details">
+                <li>Humidity <span id="humidity">80</span>%</li>
+                <li>Wind <span id="wind">4.3</span>km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
