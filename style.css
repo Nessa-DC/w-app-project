@@ -91,3 +91,7 @@ li {
   position: relative;
   top: -16px;
 }
+
+.coded {
+  font-family: monospace;
+}
